@@ -1,5 +1,5 @@
 package operaciones;
-/*
+/**
  * Clase donde se hacen las operaciones.
  */
 public class Operaciones{
@@ -9,7 +9,7 @@ public class Operaciones{
         numero = valor1 + valor2;
         return numero;
     }
-    /*
+    /**
      * Operacion de restar.
      */
     public int restar (int valor1, int valor2){
