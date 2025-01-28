@@ -4,7 +4,9 @@ package operaciones;
  * Prueba
  */
 public class Operaciones{
-	
+	 /**
+     * Operacion de sumar.
+     */
     public int sumar (int valor1, int valor2){
         int numero;
         numero = valor1 + valor2;
@@ -18,7 +20,7 @@ public class Operaciones{
         numero = valor1 - valor2;
         return numero;
     }
-    /*
+    /**
      * Operacion de multiplicar.
      */
     public int multiplicar (int valor1, int valor2){
@@ -26,7 +28,7 @@ public class Operaciones{
         numero = valor1 * valor2;
         return numero;
     }
-    /*
+    /**
      * Operacion de dividir.
      */
     public int dividir (int valor1, int valor2){
@@ -34,7 +36,7 @@ public class Operaciones{
         numero = valor1 / valor2;
         return numero;
     }
-    /*
+    /**
      * Operacion de resto.
      */
     public int resto (int valor1, int valor2){

@@ -1,11 +1,11 @@
 package menu;
 import java.util.Scanner;
-/*
+/**
  * Clase para formar la operacion.
  */
 public class Menu {
     private static Scanner teclado = new Scanner(System.in);
-    /*
+    /**
      * Clase para asignar los numeros.
      */
     public int[] pedirNumeros(){
@@ -17,7 +17,7 @@ public class Menu {
         ret [1] = teclado.nextInt();
         return ret;
     }
-    /*
+    /**
 	 * Clase para declarar el metodo de calculo.
 	 */
     public String menuOpciones() {
@@ -32,7 +32,7 @@ public class Menu {
                 ));
                 return ret;
     }
-    /*
+    /**
 	 * Clase para repetir el programa.
 	 */
     public boolean repetir(){
