@@ -1,4 +1,4 @@
-package principal;
+	package principal;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.System.Logger;
@@ -44,25 +44,32 @@ public class Calculadora{
             	if (operacion.equalsIgnoreCase("+")){
                     resultado = operaciones.sumar(operandos[0], operandos[1]);
                     System.out.println ("Resultado: " + resultado);
-                    logManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/resultadosCalculadora.html"));
                 } else if (operacion.equalsIgnoreCase("-")){
                     resultado = operaciones.restar(operandos[0], operandos[1]);
                     System.out.println ("Resultado: " + resultado);
-                    
+                    LogManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/resultadosCalculadora.html"));
                 } else if (operacion.equalsIgnoreCase("*")){
                     resultado = operaciones.multiplicar(operandos[0], operandos[1]);
                     System.out.println ("Resultado: " + resultado);
-                    
+                    LogManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/resultadosCalculadora.html"));
                 } else if (operacion.equalsIgnoreCase("/")){
                     resultado = operaciones.dividir(operandos[0], operandos[1]);
                     System.out.println ("Resultado: " + resultado);
-                    
+                    LogManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/resultadosCalculadora.html"));
                 } else if (operacion.equalsIgnoreCase("%")){
                     resultado = operaciones.resto(operandos[0], operandos[1]);
                     System.out.println ("Resultado: " + resultado);
-                    
+                    LogManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/resultadosCalculadora.html"));
                 } else {
                     System.out.println ("Operaci�n no v�lida");
+                    LogManager.readConfiguration(new FileInputStream("./logs/operaciones.log"));
+                    LogManager.readConfiguration(new FileInputStream("./logs/resultadosCalculadora.html"));
                 }
 			} catch (Exception e) {
 				Logger.log(Level.SEVERE, "error",e);
